@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internet Shop</title>
+    <meta name="keywords" content="shop, internet shop, gift, gifts, halloween" />
+    <meta name="description" content="The best shop for gifts and halloween!!!" />
+   
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+<div class="wrap">
+<header>
+
+</header>
+
+<div class="back-line">
+<figure class="center">
+    <div class="mySlide fade">
+    <div class="numbertext"></div>
+    <div class="photo p1"></div>
+    <div class="text"></div>
+    </div>
+    <div class="mySlide fade">
+    <div class="numbertext"></div>
+    <div class="photo p2"></div>
+    <div class="text"></div>
+    </div>
+    <div class="mySlide fade">
+    <div class="numbertext"></div>
+    <div class="photo p3"></div>
+    <div class="text"></div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094</a>
+<a class="next" onclick="plusSlides(1)">&#10095</a>
+</figure>
+
+<div class="grid">
+    <div class="pic">
+        
+    </div>
+     <div class="pic">
+        
+    </div>
+     <div class="pic">
+        
+    </div>
+    <div class="pic">
+        
+    </div>
+</div>
+<div class="grid">
+    <div class="pic">
+        
+    </div>
+    <div class="pic">
+        
+    </div>
+     <div class="pic">
+        
+    </div>
+     <div class="pic">
+        
+    </div>
+</div>
+    <div class="grid">
+    <div class="pic">
+        
+    </div>
+    <div class="pic">
+        
+    </div>
+     <div class="pic">
+        
+    </div>
+         <div class="pic">
+        
+    </div>
+</div>
+<div class="other">
+    
+</div>
+</div>
+</div>
+<footer>
+</footer>
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+var slideIndex = 1;
+    showslides(slideIndex);
+    function plusSlides(n){
+        showslides(slideIndex += n);
+    } 
+    function currentSlide(n){
+        showslides(slideIndex = n);
+    }
+    function showslides(n){
+        var i
+        var slides = document.getElementsByClassName("mySlide");
+    if(n>slides.length){
+        slideIndex = 1
+    }
+    if(n<1){
+        slideIndex = slides.length
+    }
+    for(i=0; i<slides.length; i++){
+        slides[i].style.display = "none"
+    }
+    slides[slideIndex -1].style.display = "block";
+    }
+
+    </script>
+</body>
+</html>
